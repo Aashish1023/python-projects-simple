@@ -3,7 +3,7 @@ def add(x, y):
 
 print ("Welcome to the Calculator!")
 print("Select operation:")
-prinit("1. Add")
+print("1. Add")
 
 choice = input("Enter choice (1): ")
 
