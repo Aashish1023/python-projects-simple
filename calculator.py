@@ -18,7 +18,7 @@ print("4. Divide")
 
 choice = input("Enter choice (1/2/3/4): ")
 
-if choice in ['1','2','3','3'] and choice.isdigit():
+if choice in ['1','2','3','4'] and choice.isdigit():
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
     
@@ -30,6 +30,7 @@ if choice in ['1','2','3','3'] and choice.isdigit():
         print(f"Result: {multiply(num1, num2)}")
     elif choice == '4':
         print(f"Result: {divide(num1, num2)}")
-
-    result = add(num1, num2)
-    print(f"The result of adding {num1} and {num2} is: {result}")
+else:
+    print("❌ Invalid input! Please enter a valid choice (1/2/3/4).")
+# This code implements a simple calculator that can perform addition, subtraction, multiplication, and division.
+   
