@@ -21,3 +21,16 @@ def view_tasks():
         print("Your To-Do List: ")
         for index, task in enumerate(todo_list, start=1):
             print(f"{index}. {task}")
+
+def remove_task():
+    view_tasks()
+    if todo_list:
+        try:
+            task_num = int(input("Enter the task number you want to remove:  "))
+                if 1 <= task_num <= len(todo_list):
+                removed = todo_list.pop(task_num - 1)
+                print(f" Removed: {removed}")
+        else:
+            print("❌ Invalid task number. Please try again.")
+        except ValueError:
+            print("❌ Invalid input. Please enter a number.")
