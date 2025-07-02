@@ -3,7 +3,7 @@
 todo_list = []
 
 def show_menu():
-    print(" To-Do List Application")
+    print("To-Do List Application")
     print("1. Add a Task")
     print("2. View Tasks")
     print("3. Remove a Task")
@@ -16,11 +16,11 @@ def add_task():
 
 def view_tasks():
     if not todo_list:
-        print("No tasks in the list.")
+        print("📭 No tasks in the list.")
     else:
-        print("Your To-Do List: ")
-        for index, task in enumerate(todo_list, start=1):
-            print("{index}. {task}")
+        print("\n📋 Your To-Do List:")
+        for idx, task in enumerate(todo_list, start=1):
+            print(f"{idx}. {task}")
 
 def remove_task():
     view_tasks()
