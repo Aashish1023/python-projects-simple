@@ -12,7 +12,7 @@ def show_menu():
 def add_task():
     task = input("Enter the task you want to add: ")
     todo_list.append(task)
-    print("Task '{task}' added successfully!")
+    print("Task {task} added successfully!")
 
 def view_tasks():
     if not todo_list:
