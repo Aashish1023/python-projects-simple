@@ -11,11 +11,11 @@ root.geometry("400x200")
 root.configure(bg="black")
 
 # Create a label to display the time
-label = tk.Label(root, font=("calibri", 40, "bold"), bg="black", fg="white")
+label = tk.Label(root, font=("calibri", 40, "bold"), bg="black", fg="red")
 label.pack(anchor='center', pady=20)
 
 #date label
-date_label = tk.Label(root, font=("calibri", 20),background="black", fg="white")
+date_label = tk.Label(root, font=("calibri", 20),background="red", fg="black")
 date_label.pack(anchor='center' )
 
 # Function to update the time
