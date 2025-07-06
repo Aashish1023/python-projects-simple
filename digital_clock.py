@@ -15,7 +15,7 @@ label.pack(anchor='center', pady=20)
 
 # Function to update the time
 def time():
-    current_time = strftime('%H:%M:%S %p')
+    current_time = strftime('%I:%M:%S %p')
     label.config(text=current_time) 
     label.after(1000, time)  # Update every second
 
